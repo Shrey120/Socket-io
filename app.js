@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 const io = new Server(server, {
   wssEngine: ["ws", "wss"],
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://zen-chat.me",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   },
   transports: ["websocket", "polling"], // Add 'polling' as a fallback transport
